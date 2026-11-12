@@ -3,3 +3,8 @@ if (!/^es\b/i.test(navigator.language || "")) {
   document.documentElement.lang = "en";
   for (const el of document.querySelectorAll("[data-en]")) el.textContent = el.dataset.en;
 }
+
+// The page is served on the URL that was asked for, so this is where to come back.
+// Authentik drops a redirect that does not name this host, and sends people to its app list instead.
+document.querySelector("a.sign-in").href =
+  "/outpost.goauthentik.io/start?rd=" + encodeURIComponent(location.href);

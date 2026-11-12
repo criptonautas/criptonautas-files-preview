@@ -11,7 +11,7 @@ detrás de un proveedor de identidad; esta página va delante.
 ## Qué hace
 
 - Muestra el símbolo de Criptonautas, el nombre, una línea que dice para quién es la
-  biblioteca y un botón que inicia la sesión y vuelve a la biblioteca.
+  biblioteca y un botón que inicia la sesión y vuelve exactamente a la página que abriste.
 - Elige el idioma según el navegador: español si está en español, inglés en cualquier
   otro caso. El español está en el marcado, así que la página se lee aunque
   JavaScript esté desactivado.
@@ -31,7 +31,7 @@ puede entrar antes de pedirle a nadie que inicie sesión.
 | Archivo | Qué es |
 |---|---|
 | `public/preview.html` | la página |
-| `public/lang.js` | pasa el texto a inglés cuando el navegador no está en español |
+| `public/lang.js` | pasa el texto a inglés cuando el navegador no está en español, y hace que el botón vuelva a la URL actual |
 | `public/inter-tight.woff2` | Inter Tight, tomada tal cual del kit de marca de Criptonautas |
 | `OFL-inter-tight.txt` | la licencia de la fuente |
 

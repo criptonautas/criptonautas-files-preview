@@ -11,7 +11,7 @@ behind an identity provider; this page stands in front of it.
 ## What it does
 
 - Shows the Criptonautas symbol, the name, one line saying who the library is for,
-  and a button that starts the sign-in and comes back to the library.
+  and a button that starts the sign-in and comes back to the exact page you opened.
 - Picks the language from the browser: Spanish for Spanish, English for anything
   else. Spanish is in the markup, so the page still reads with JavaScript off.
 - Follows the system light or dark scheme, with the brand kit palette and Inter Tight.
@@ -30,7 +30,7 @@ is and who can get in before asking anyone to sign in.
 | File | What it is |
 |---|---|
 | `public/preview.html` | the page |
-| `public/lang.js` | switches the text to English when the browser is not in Spanish |
+| `public/lang.js` | switches the text to English when the browser is not in Spanish, and points the button back at the current URL |
 | `public/inter-tight.woff2` | Inter Tight, taken as-is from the Criptonautas brand kit |
 | `OFL-inter-tight.txt` | the font's licence |
 
